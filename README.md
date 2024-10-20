@@ -96,7 +96,7 @@ Below are examples of the anomalies detected by different methods:
 
 ### 1. LSTM Autoencoder
 
-![LSTM Autoencoder Results](images/lstm_autoencoder_result.png)
+![LSTM Autoencoder Results](images/lstm_auto_encoder_result.png)
 
 ### 2. Isolation Forest
 
