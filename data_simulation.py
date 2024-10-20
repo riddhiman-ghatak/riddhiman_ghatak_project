@@ -1,3 +1,17 @@
+"""
+This script generates a synthetic time-series data stream with various types of anomalies, including spike, dip, 
+level shift, trend, and variance change anomalies. The generated data simulates real-world patterns such as 
+regular cyclic variations, seasonal components, and random noise, with injected anomalies for testing anomaly 
+detection algorithms. The time-series data is saved to a CSV file with timestamps starting from a specified date.
+Total 1000 points has been generated 
+
+Anomalies:
+1. Spike anomalies: Sudden large positive deviations.
+2. Dip anomalies: Sudden large negative deviations.
+3. Level shift anomalies: A sustained change in the average value over a period.
+4. Trend anomalies: Gradual increase or decrease over a period.
+5. Variance change anomalies: Increased variability in the data over a period.
+"""
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
@@ -24,7 +38,7 @@ def generate_data_stream(total_points=1000, start_date="2024-01-01"):
     
     # 2. Dip anomalies
     dip_indexes = np.random.choice(total_points, size=int(0.02 * total_points), replace=False)
-    anomalies[dip_indexes] -= np.random.uniform(15, 25, size=len(dip_indexes))
+    anomalies[dip_indexes] -= np.random.uniform(15, 25, size=(len(dip_indexes)))
     
     # 3. Level shift anomalies
     shift_start = np.random.randint(total_points // 4, 3 * total_points // 4)
