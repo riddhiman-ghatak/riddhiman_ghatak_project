@@ -78,9 +78,13 @@ python data_simulation.py
 ### Step 4: run different scripts for anomaly detection
 ```bash
 python robust_z_score_method.py
+```
 
+```bash
 python isolation_forest_method.py
+```
 
+```bash
 python using_lstm_autoencoder.py
 
 
