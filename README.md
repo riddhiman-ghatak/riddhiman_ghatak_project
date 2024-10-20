@@ -90,6 +90,24 @@ python using_lstm_autoencoder.py
 python visualization.py
 
 ```
+## Visualization Examples
+
+Below are examples of the anomalies detected by different methods:
+
+### 1. LSTM Autoencoder
+
+![LSTM Autoencoder Results](images/lstm_autoencoder_result.png)
+
+### 2. Isolation Forest
+
+![Isolation Forest Results](images/isolation_forest.png)
+
+### 3. Robust Z-Score
+
+![Robust Z-Score Results](images/z_score_method.png)
+
+
+
 
 ## Repository Structure
 
